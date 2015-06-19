@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    
+
+</head>
+<body>
+    <div class="row">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="~/Home/Index">Gold Palace</a>
+            </div>
+            <div>
+
+                <ul class="nav navbar-nav">
+                    
+                    <li class="active"><a href="~/Home/Index">Home</a></li>
+                   
+                    <li><a href="~/pages/login">Admin Dashboard</a></li>
+                    <li><a href="~/Home/About">About</a></li>
+                    <li><a href="~/User/Register">Register</a></li>
+                    <li><a href="~/User/Login">Login</a></li>
+                    <li><a href="~/Home/Products">Products</a></li>
+                    <li><a href="~/Home/ContactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <form class="navbar-form navbar-left pull-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Product" />
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+        </nav>
+        </div>
+    <div>
+         @RenderBody();
+    </div>
+
+
+
+    <footer class="nav navbar-fixed-bottom">
+        <p style="margin-top: 13px;font-family:Algerian;font-size:20px;font:#ff6a00;color:darkorange">&copy;Gold Palace All rights reserved</p>
+    </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
